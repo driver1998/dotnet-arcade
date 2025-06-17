@@ -333,6 +333,16 @@ while :; do
                 __UbuntuRepo="http://ftp.debian.org/debian/"
             fi
             ;;
+        loongnix) # Loongnix 25
+            __CodeName=loongnix
+            __KeyringFile=
+            __SkipSigCheck=1
+            __LLDB_Package="liblldb-18-dev"
+
+            if [[ -z "$__UbuntuRepo" ]]; then
+                __UbuntuRepo="https://pkg.loongnix.cn/loongnix/25"
+            fi
+            ;;
         sid) # Debian sid
             __CodeName=sid
             __UbuntuSuites=
