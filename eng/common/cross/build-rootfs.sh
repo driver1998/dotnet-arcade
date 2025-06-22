@@ -341,6 +341,9 @@ while :; do
             if [[ -z "$__UbuntuRepo" ]]; then
                 __UbuntuRepo="https://pkg.loongnix.cn/loongnix/25"
             fi
+            if [[ -e "$__KeyringFile" ]]; then
+                __Keyring="--keyring $__KeyringFile"
+            fi
             ;;
         sid) # Debian sid
             __CodeName=sid
