@@ -337,6 +337,7 @@ while :; do
             __CodeName=loongnix
             __KeyringFile="/usr/share/keyrings/debian-archive-buster-loongarch64-stable.gpg"
             __LLDB_Package="liblldb-18-dev"
+            __UbuntuSuites=
 
             if [[ -z "$__UbuntuRepo" ]]; then
                 __UbuntuRepo="https://pkg.loongnix.cn/loongnix/25"
