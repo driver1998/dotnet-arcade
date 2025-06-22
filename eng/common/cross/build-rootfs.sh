@@ -335,8 +335,7 @@ while :; do
             ;;
         loongnix) # Loongnix 25
             __CodeName=loongnix
-            __KeyringFile=
-            __SkipSigCheck=1
+            __KeyringFile="/usr/share/keyrings/debian-archive-buster-loongarch64-stable.gpg"
             __LLDB_Package="liblldb-18-dev"
 
             if [[ -z "$__UbuntuRepo" ]]; then
